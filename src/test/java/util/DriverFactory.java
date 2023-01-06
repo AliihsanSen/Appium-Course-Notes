@@ -13,7 +13,7 @@ public class DriverFactory {
     static Properties properties;
     static DesiredCapabilities capabilities;
 
-    public static AppiumDriver initialize_Driver(String browser){
+    public static AppiumDriver initializeDriver(String browser){
         properties = ConfigReader.getProperties();
         capabilities = new DesiredCapabilities();
         if(browser.equals("Android")){
