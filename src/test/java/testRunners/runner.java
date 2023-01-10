@@ -12,6 +12,7 @@ import util.DriverFactory;
         plugin = {
                 "summary","pretty","html:Reports/CucumberReport/Reports.html"
         }
+
 )
 
 public class runner extends AbstractTestNGCucumberTests {
