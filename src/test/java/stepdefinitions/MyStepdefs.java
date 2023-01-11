@@ -3,8 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class n11StepDefinitions {
-
+public class MyStepdefs {
     @When("Kategorilere tiklanir")
     public void kategorilereTiklanir() {
     }
