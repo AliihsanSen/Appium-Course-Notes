@@ -18,4 +18,22 @@ public class n11Pages {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.elementHelper = new ElementHelper(driver);
     }
+
+    public void kategoriTiklama() {
+    }
+
+    public void elektronikTiklama() {
+    }
+
+    public void telefonVeAksesuarSecimi() {
+    }
+
+    public void cepTelefonuSecimi() {
+    }
+
+    public void markaSecimi() {
+    }
+
+    public void filtrelemeTiklama() {
+    }
 }
