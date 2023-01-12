@@ -36,4 +36,19 @@ public class n11Pages {
 
     public void filtrelemeTiklama() {
     }
+
+    public void filtrelemeYap() {
+    }
+
+    public void sonuclariGosterTiklama() {
+    }
+
+    public void urunSepeteEkleme() {
+    }
+
+    public void sepeteGit() {
+    }
+
+    public void sepetKontrol() {
+    }
 }
