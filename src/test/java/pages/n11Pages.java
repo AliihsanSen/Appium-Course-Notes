@@ -32,7 +32,7 @@ public class n11Pages {
 
     public n11Pages(AppiumDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, 10);
         this.elementHelper = new ElementHelper(driver);
     }
 

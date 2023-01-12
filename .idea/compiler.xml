@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AppiumCourses" />
+        <module name="SeleniumGiris" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AppiumCourses" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
