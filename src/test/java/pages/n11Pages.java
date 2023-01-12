@@ -10,9 +10,9 @@ import util.ElementHelper;
 import java.util.List;
 public class n11Pages {
 
-    AppiumDriver driver;
-    WebDriverWait wait;
-    ElementHelper elementHelper;
+    public AppiumDriver<WebElement> driver;
+    public WebDriverWait wait;
+   public ElementHelper elementHelper;
 
     By kategorilerbutonu = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Kategoriler\")");
     By apple = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Apple\")");

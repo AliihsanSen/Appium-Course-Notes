@@ -7,7 +7,7 @@ import util.DriverFactory;
 
 @CucumberOptions(
         features ={"src/test/java/features/n11.feature"},
-        glue = {"StepDefinitions", "util"},
+        glue = {"stepdefinitions", "util"},
         tags = "",
         plugin = {
                 "summary","pretty","html:Reports/CucumberReport/Reports.html"

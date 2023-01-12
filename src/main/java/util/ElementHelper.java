@@ -16,7 +16,7 @@ public class ElementHelper {
 
     public ElementHelper(AppiumDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, 10);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.action = new Actions(driver);
     }
 
