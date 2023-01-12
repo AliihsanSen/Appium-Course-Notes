@@ -2,15 +2,13 @@ package pages;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import util.ElementHelper;
-import org.openqa.selenium.By;
 
-import javax.xml.bind.Element;
 import java.time.Duration;
 import java.util.List;
-
 public class n11Pages {
 
     AppiumDriver driver;

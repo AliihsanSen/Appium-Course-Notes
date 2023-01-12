@@ -16,7 +16,7 @@ public class ElementHelper {
 
     public ElementHelper(AppiumDriver driver){
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver,(10));
         this.action = new Actions(driver);
     }
     public WebElement presenceElement(By key){
@@ -31,9 +31,11 @@ public class ElementHelper {
         findElement(key).click();  // click --- tıklamayı sağlar.
     }
 
-    public void sendKey(By key , String text){
+    public void sendKeys(By key , String text){
         findElement(key).sendKeys(text);   //sendKeys --- Text gondermeyi sağlar.
     }
+    public void checkVisible(By key){
+        wait.until(ExpectedConditions.presenceOfElementLocated(key));
 
-
+    }
 }
