@@ -1,20 +1,20 @@
 package util;
-
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
+
     static AppiumDriver driver;
     static Properties properties;
     static DesiredCapabilities capabilities;
 
-    public static AppiumDriver initializeDriver(String browser) {
+    public static AppiumDriver initialize_Driver(String browser) {
         properties = ConfigReader.getProperties();
+
         capabilities = new DesiredCapabilities();
         if (browser.equals("Android")) {
             capabilities.setCapability("platformName", "Android");
@@ -42,4 +42,6 @@ public class DriverFactory {
     public static AppiumDriver getDriver() {
         return driver;
     }
+
+
 }

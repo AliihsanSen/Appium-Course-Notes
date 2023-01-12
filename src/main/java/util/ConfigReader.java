@@ -8,7 +8,7 @@ import java.util.Properties;
 public class ConfigReader {
     private static Properties properties;
 
-    public static Properties initializeProperties(){
+    public static Properties initialize_Properties(){
         properties = new Properties();
         try {
             FileInputStream fileInputStream = new FileInputStream("config.properties");

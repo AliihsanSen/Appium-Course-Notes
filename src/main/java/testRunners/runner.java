@@ -6,8 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 import util.DriverFactory;
 
 @CucumberOptions(
-        features ={"src/test/resources/features"},
-        glue = {"StepDefinitions","util"},
+        features ={"src/test/java/features/n11.feature"},
+        glue = {"StepDefinitions", "util"},
         tags = "",
         plugin = {
                 "summary","pretty","html:Reports/CucumberReport/Reports.html"
