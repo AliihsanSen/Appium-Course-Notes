@@ -14,27 +14,31 @@ public class ElementHelper {
     WebDriverWait wait;
     Actions action;
 
-    public ElementHelper(AppiumDriver driver){
+    public ElementHelper(AppiumDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver,(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.action = new Actions(driver);
     }
-    public WebElement presenceElement(By key){
+
+    public WebElement presenceElement(By key) {
         return
                 wait.until(ExpectedConditions.presenceOfElementLocated(key));
     }
-    public WebElement findElement(By key){
+
+    public WebElement findElement(By key) {
         WebElement element = presenceElement(key);
         return element;
     }
-    public void click(By key){
+
+    public void click(By key) {
         findElement(key).click();  // click --- tıklamayı sağlar.
     }
 
-    public void sendKeys(By key , String text){
+    public void sendKeys(By key, String text) {
         findElement(key).sendKeys(text);   //sendKeys --- Text gondermeyi sağlar.
     }
-    public void checkVisible(By key){
+
+    public void checkVisible(By key) {
         wait.until(ExpectedConditions.presenceOfElementLocated(key));
 
     }
