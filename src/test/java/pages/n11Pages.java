@@ -12,4 +12,8 @@ public class n11Pages {
     WebDriverWait wait;
     ElementHelper elementHelper;
 
+    public n11Pages(AppiumDriver driver){
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver);
+    }
 }
